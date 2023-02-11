@@ -1,0 +1,116 @@
+:root {
+  --bg-body: #0d1a2d;
+  --bg-content: #14273e;
+  --light-green: #2db3b4;
+  --transition: all 0.4s linear;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  background-color: var(--bg-body);
+}
+.container {
+  background-color: white;
+  border-radius: 8px;
+  width: 300px;
+  height: 500px;
+  margin: 60px auto;
+  border-radius: 8px;
+  background-color: var(--bg-content);
+  box-shadow: 10px 10px 15px #00000094;
+  padding: 15px;
+  cursor: pointer;
+}
+.container .image {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  position: relative;
+  transition: var(--transition);
+}
+.container .image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #2db3b49e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  transition: var(--transition);
+  display: none;
+}
+.container:hover .image .overlay {
+  display: flex;
+}
+.container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.container .info {
+  margin-top: 18px;
+}
+.container .info .title {
+  color: #eee;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+.container:hover .info .title {
+  color: var(--light-green);
+}
+.container .info .text {
+  line-height: 1.4;
+  color: silver;
+  margin-bottom: 15px;
+}
+.container .info .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .info .date .eth {
+  color: var(--light-green);
+  font-weight: bold;
+}
+.container .info .date .clock {
+  color: silver;
+  display: flex;
+  align-items: center;
+}
+.container .info .date .clock svg {
+  margin-right: 10px;
+}
+.container .avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+.container .avatar img {
+  width: 50px;
+  height: 50px;
+}
+.container .avatar .text {
+  font-weight: bold;
+  color: silver;
+}
+.container .avatar .text span {
+  color: white;
+  transition: var(--transition);
+}
+.container:hover .avatar .text span {
+  color: var(--light-green);
+}
