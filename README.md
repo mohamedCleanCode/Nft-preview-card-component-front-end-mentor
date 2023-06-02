@@ -14,4 +14,4 @@ This HTML & CSS only challenge is perfect for anyone just starting out or anyone
 
 ### See hover states for interactive elements
 
-![Getting Started](./imgs/design/desktop-preview.jpg)
+![Getting Started](./design/desktop-preview.jpg)
